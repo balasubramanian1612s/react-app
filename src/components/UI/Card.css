@@ -1,0 +1,14 @@
+.card {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.grey{
+  background-color: #4b4b4b;
+}
+
+.white{
+  background-color: wheat;
+}

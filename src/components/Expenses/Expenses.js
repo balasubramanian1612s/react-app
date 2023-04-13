@@ -1,3 +1,4 @@
+import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem";
 
 function Expenses() {
@@ -24,11 +25,15 @@ function Expenses() {
   ];
 
   return (
-    <div>
-      {expenses.map((e) => {
-        return <ExpenseItem date={e.date} title={e.title} amount={e.amount} />;
-      })}
-    </div>
+    <Card color={"white"}>
+      <div className="expenses">
+        {expenses.map((e) => {
+          return (
+            <ExpenseItem date={e.date} title={e.title} amount={e.amount} />
+          );
+        })}
+      </div>
+    </Card>
   );
 }
 
